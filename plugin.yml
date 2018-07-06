@@ -1,0 +1,17 @@
+name: Poll
+main: tomo\main
+version: 1.0
+api: [3.0.0]
+load: POSTWORLD
+author: tomo
+commands:
+ poll:
+  description: "Pollコマンド"
+  usage: /poll <subcommand>
+ permissions:
+  poll:
+   default: true
+   children:
+      poll.command:
+        description: "Allows you to use all PurePerms commands."
+        default: true
